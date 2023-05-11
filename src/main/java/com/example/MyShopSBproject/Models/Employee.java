@@ -8,8 +8,6 @@ import javax.persistence.*;
 @Setter
 @Data
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "Employee")
 public class Employee {
 
