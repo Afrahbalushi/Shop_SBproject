@@ -16,7 +16,7 @@ public class ManagerController {
     ManagerService managerService;
 
     @RequestMapping(value = "getById", method = RequestMethod.GET)
-    public Manager getManagerById(@RequestParam("id") Integer Manager_id) {
+    public Manager getManagerById(Integer Manager_id) {
         return managerService.getManagerById(Manager_id);
     }
 }

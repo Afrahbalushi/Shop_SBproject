@@ -17,7 +17,7 @@ public class EmployeeController {
 
 
     @RequestMapping(value = "getById", method = RequestMethod.GET)
-    public Employee getEmployeeById(@RequestParam("id") Integer Employee_id)  {
+    public Employee getEmployeeById(Integer Employee_id)  {
         return employeeService.getEmployeeById(Employee_id);
     }
 

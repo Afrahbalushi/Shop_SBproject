@@ -14,7 +14,10 @@ public class EmployeeService {
     EmployeeRepository employeeRepository;
 
     @RequestMapping(value = "getById")
-    public Employee getEmployeeById(@RequestParam("id") Integer Employee_id){
+    public Employee getEmployeeById(Integer Employee_id){
         return employeeRepository.getReferenceById(Employee_id);
     }
+
+
+
 }

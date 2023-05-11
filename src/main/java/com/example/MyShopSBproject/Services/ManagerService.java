@@ -14,7 +14,7 @@ public class ManagerService {
 
 
     @RequestMapping(value = "getById")
-    public Manager getManagerById(@RequestParam("id") Integer Manager_id){
+    public Manager getManagerById(Integer Manager_id){
         return managerRepository.getReferenceById(Manager_id);
     }
 
