@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ManagerService {
     @Autowired
     ManagerRepository managerRepository;
-    @Autowired
-    ManagerService managerService;
+
 
     @RequestMapping(value = "getById")
     public Manager getManagerById(@RequestParam("id") Integer Manager_id){
-        return managerService.getManagerById(Manager_id);}
+        return managerRepository.getReferenceById(Manager_id);
+    }
 
 
 }

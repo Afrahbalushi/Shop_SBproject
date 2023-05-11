@@ -13,11 +13,8 @@ public class EmployeeService {
     @Autowired
     EmployeeRepository employeeRepository;
 
-    @Autowired
-    EmployeeService employeeService;
-
     @RequestMapping(value = "getById")
     public Employee getEmployeeById(@RequestParam("id") Integer Employee_id){
-        return employeeService.getEmployeeById(Employee_id);
+        return employeeRepository.getReferenceById(Employee_id);
     }
 }
