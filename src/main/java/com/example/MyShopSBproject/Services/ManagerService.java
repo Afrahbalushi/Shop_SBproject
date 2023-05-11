@@ -14,10 +14,12 @@ public class ManagerService {
     ManagerRepository managerRepository;
 
     public Manager getManagerById(Integer Manager_id){
+
         return managerRepository.findById(Manager_id).get();
     }
 
     public List<Manager> getAllManagers(){
+
         return managerRepository.findAll();
     }
 

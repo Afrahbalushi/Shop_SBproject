@@ -17,5 +17,8 @@ public class Manager {
     String name;
     String email;
 
+    @ManyToOne
+    @JoinColumn(name = "employee_id", referencedColumnName = "id")
+    Employee employee;
 
 }
